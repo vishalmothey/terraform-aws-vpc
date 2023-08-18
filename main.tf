@@ -63,7 +63,7 @@ resource "aws_vpc_ipv4_cidr_block_association" "this" {
 ################################################################################
 # DHCP Options Set
 ################################################################################
-
+#Adding comments on DHCP section
 resource "aws_vpc_dhcp_options" "this" {
   count = local.create_vpc && var.enable_dhcp_options ? 1 : 0
 
